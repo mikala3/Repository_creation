@@ -1,0 +1,1 @@
+To run this program, go to the path where you have the create.py file and type in "python create.py new_repository"
