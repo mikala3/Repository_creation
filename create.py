@@ -4,8 +4,6 @@ import getpass
 import sys
 import os
 
-test = "test"
-print("this is \"%s\"" % (test))
 #move to directory where projects is stored
 PATH = "C:\\Users\\Mikael\\PycharmProjects\\"
 os.chdir(PATH)
@@ -37,6 +35,7 @@ if not os.path.exists(PATH+str(sys.argv[1])):
             message = "initial commit"
             os.system("git commit -m \"%s\"" % (message))
             os.system("git push -u origin master")
+            os.system("pycharm .")
     except IndexError:
         print("Need an argument, type the name of the repository")
 else:
